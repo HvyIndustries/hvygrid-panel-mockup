@@ -1,0 +1,242 @@
+body {
+    background: #0a1420;
+    font-family: "Open Sans";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 920px;
+    margin: 0 auto;
+}
+
+/********* CONTENT *********/
+
+.content {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.content h1 {
+    color: #eee;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.content .right {
+    float: right;
+}
+
+.content .form-control {
+    font: inherit;
+    width: 280px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 0;
+}
+
+.websites-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.websites-table tr td, .websites-table tr th {
+    text-align: left;
+    border-bottom: 2px solid #04080d;
+    padding: 8px 4px;
+}
+
+.websites-table tr th {
+    color: #eee;
+}
+
+.websites-table .status {
+    width: 20px;
+}
+
+/********* BUTTONS *********/
+
+.btn {
+    font: inherit;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    transition: background 100ms;
+}
+
+.btn-primary {
+    background: #2f972f;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: #2a872a;
+}
+.btn-primary:active {
+    background: #1d5e1d;
+}
+
+.btn-secondary {
+    background: #3da1cb;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+    background: #3690b6;
+}
+.btn-secondary:active {
+    background: #396f86;
+}
+
+.btn-danger {
+    background: #b2552c;
+}
+.btn-danger:hover, .btn-danger:focus {
+    background: #a04c27;
+}
+.btn-danger:active {
+    background: #803c1f;
+}
+
+.btn-tertiary {
+    background: #4d545d;
+}
+.btn-tertiary:hover, .btn-tertiary:focus {
+    background: #3d434a;
+}
+.btn-tertiary:active {
+    background: #2a2e33;
+}
+
+/********* NAVIGATION *********/
+
+.nav {
+    background: #04080d;  /*#070e16;*/
+    height: 40px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px 3px;
+    margin: 0 7px;
+    border-bottom: 2px solid transparent;
+    transition: border 300ms, color 300ms;
+}
+
+.nav ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #246079;
+}
+
+.nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #3da1cb;
+}
+
+.nav ul li.right {
+    float: right;
+}
+
+.nav ul li.text {
+    color: #666;
+    margin-right: 5px;
+}
+
+.nav .pipe {
+    color: #444;
+    padding: 0 5px;
+}
+
+/********* LOGIN *********/
+
+.loginbox {
+    width: 350px;
+    margin: 50px auto 0 auto;
+    background: #eee;
+    box-shadow: 0 0 3px 3px #000;
+    border: 1px solid #fff;
+    border-radius: 1px;
+}
+
+.loginbox-inner {
+    padding: 20px;
+}
+
+.loginbox-inner h1 {
+    text-align: center;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+.loginbox-inner .form-control {
+    font: inherit;
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.loginbox-inner .form-control:focus {
+    border: 2px solid #81b2ce;
+    outline: none;
+}
+
+.loginbox-inner .btn {
+    font: inherit;
+    width: 304px;
+    padding: 14px 10px;
+    border-radius: 4px;
+    background: #2f972f;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.loginbox-inner .btn:hover, .loginbox-inner .btn:focus {
+    background: #2a872a;
+    outline: none;
+}
+
+.loginbox-inner .btn:active {
+    background: #1d5e1d;
+}
+
+.loginbox-inner p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.loginbox-inner p a {
+    color: #666;
+    text-decoration: none;
+}
+
+.loginbox-inner p a:hover, .loginbox-inner p a:focus {
+    color: #000;
+    text-decoration: none;
+}

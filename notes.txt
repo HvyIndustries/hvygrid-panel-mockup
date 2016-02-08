@@ -1,0 +1,9 @@
+
+MARKUP NOTES / EXAMPLES
+
+BUTTONS
+
+    <a href="#" class="btn btn-primary">Primary (Green)</a>
+    <a href="#" class="btn btn-secondary">Secondary (Blue)</a>
+    <a href="#" class="btn btn-danger">Danger (Red)</a>
+    <a href="#" class="btn btn-tertiary">Tertiary (Grey)</a>
