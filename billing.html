@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing | HvyGrid</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./fa/css/font-awesome.css" />
+    <script type="text/javascript" src="./html5.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="wrap">
+                <ul>
+                    <li class="right"><a href="./index.html">Logout</a></li>
+                    <li class="right"><a href="./account.html">My Account</a></li>
+                    <li class="right text">$ 4.02 Credit<span class="pipe">|</span>nevada_scout</li>
+
+                    <li><a href="./websites.html">Websites</a></li>
+                    <li><a href="./databases.html">Databases</a></li>
+                    <li><a href="./billing.html" class="active">Billing</a></li>
+                    <li><a href="./support.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="wrap">
+
+                <h1>Billing &amp; Credit</h1>
+
+                <div class="block">
+                    <p class="credit-number"><span class="dollar">$</span>4.02</p>
+                    <h2>Account Credit</h2>
+                    <a href="./referrals.html" class="btn btn-secondary block-fixed-btn">Earn Credit</a> <!-- Open referral info area -->
+                    <a href="#" class="btn btn-primary block-fixed-btn">Top-up Credit</a> <!-- Open stripe popup to add $10 or more credit via credit/debit card -->
+                </div>
+                <div class="block-spacer"></div>
+                <div class="block">
+                    <p class="credit-number"><span class="dollar">$</span>15.84</p>
+                    <h2>Usage This Month</h2>
+                    <a href="#" class="btn btn-tertiary block-fixed-btn">View Bill</a> <!-- link directly to current month bill as PDF -->
+                </div>
+
+                <!-- TODO -- handle VAT (for VATMOSS) for european customers -->
+
+                <h2>Billing History</h2>
+
+                <table class="table table-billing">
+                    <tr>
+                        <th>Date <i class="fa fa-fw fa-caret-down"></i></th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td>February 1st, 2016</td>
+                        <td>Invoice for January 2016</td>
+                        <td>$24.00</td>
+                        <td><a href="#">View Invoice</a></td> <!-- direct link to PDF -->
+                    </tr>
+                    <tr>
+                        <td>January 1st, 2016</td>
+                        <td>Invoice for December 2015</td>
+                        <td>$18.00</td>
+                        <td><a href="#">View Invoice</a></td> <!-- direct link to PDF -->
+                    </tr>
+                    <tr>
+                        <td>December 22nd, 2015</td>
+                        <td>Credit top-up via card ending 7334</td>
+                        <td>$50.00</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>December 1st, 2015</td>
+                        <td>Invoice for November 2015</td>
+                        <td>$18.00</td>
+                        <td><a href="#">View Invoice</a></td> <!-- direct link to PDF -->
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <ul>
+                <li class="left">&copy; 2016 <a href="http://hvy.io">Hvy Industries Ltd</a></li>
+
+                <li><a href="#">Grid Status</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li><a href="./support.html">Get Support</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

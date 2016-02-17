@@ -36,7 +36,14 @@ body {
 
 .content h1 {
     color: #eee;
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.content h2 {
+    color: #eee;
+    font-size: 21px;
     font-weight: normal;
     margin: 0;
 }
@@ -93,6 +100,49 @@ body {
     color: #ccc;
     text-decoration: none;
     font-weight: bold;
+}
+
+.block {
+    display: inline-block;
+    height: 165px;
+    width: 48%;
+    border: 2px solid #000;
+    background: #09121c;
+    border-radius: 5px;
+    text-align: center;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+
+.block .credit-number {
+    font-size: 40px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #eee;
+}
+
+.block .dollar {
+    font-size: 22px;
+    color: #666;
+    padding-right: 5px;
+}
+
+.block h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: normal;
+    color: #ccc;
+}
+
+.block-spacer {
+    display: inline-block;
+    width: 3%;
+}
+
+.block .block-fixed-btn {
+    width: 110px;
+    display: inline-block;
+    margin: 0 3px;
 }
 
 /********* BUTTONS *********/
