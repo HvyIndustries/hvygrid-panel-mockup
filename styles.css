@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background: #0a1420;
     font-family: "Open Sans";
@@ -11,10 +15,22 @@ body {
     margin: 0 auto;
 }
 
+/********* STICKY FOOTER *********/
+
+.main {
+    min-height: 100%;
+    margin: 0 auto -40px;
+}
+
+.push {
+    height: 40px;
+}
+
 /********* CONTENT *********/
 
 .content {
-    margin-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     color: #ccc;
 }
 
@@ -22,6 +38,7 @@ body {
     color: #eee;
     font-size: 26px;
     font-weight: normal;
+    margin: 0;
 }
 
 .content .right {
@@ -45,38 +62,34 @@ body {
     border: 1px solid #3da1cb;
 }
 
-.websites-table {
+.table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
 }
 
-.websites-table tr td, .websites-table tr th {
+.table tr td, .table tr th {
     text-align: left;
     border-bottom: 2px solid #222b36;
-    padding: 8px 4px;
+    padding: 8px 10px;
 }
 
-.websites-table tr th {
+.table tr th {
     color: #eee;
 }
 
-.websites-table tr:hover {
+.table tr:hover {
     background: #081019;
 }
 
-.websites-table .status {
-    width: 20px;
-}
-
-.websites-table a {
+.table a {
     color: #666;
     text-decoration: none;
     font-weight: bold;
     transition: color 100ms;
 }
 
-.websites-table a:hover {
+.table a:hover {
     color: #ccc;
     text-decoration: none;
     font-weight: bold;
@@ -143,6 +156,8 @@ body {
 .nav {
     background: #04080d;  /*#070e16;*/
     height: 40px;
+    position: fixed;
+    width: 100%;
 }
 
 .nav ul {
@@ -195,27 +210,32 @@ body {
 
 /********* FOOTER *********/
 
-.footer {
+footer {
     background: #04080d;
-    margin-top: 50px;
-    height: 80px;
+    height: 40px;
 }
 
-.footer ul {
+footer ul {
     list-style-type: none;
     margin: 0;
     padding: 10px 0;
-    text-align: center;
+    text-align: right;
 }
 
-.footer ul li {
+footer ul li {
+    float: right;
     display: inline;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: bold;
 }
 
-.footer ul li a {
+footer ul li.left {
+    float: left;
+    color: #666;
+}
+
+footer ul li a {
     color: #666;
     text-decoration: none;
     padding: 8px 3px;
@@ -224,7 +244,7 @@ body {
     transition: border 300ms, color 300ms;
 }
 
-.footer ul li a:hover {
+footer ul li a:hover {
     color: #ccc;
     text-decoration: none;
 }

@@ -1,89 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>HvyGrid - Websites</title>
+    <title>Websites | HvyGrid</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <link rel="stylesheet" type="text/css" href="./fa/css/font-awesome.css" />
+    <script type="text/javascript" src="./html5.js"></script>
 </head>
-<body class="main">
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="wrap">
+                <ul>
+                    <li class="right"><a href="./index.html">Logout</a></li>
+                    <li class="right"><a href="./account.html">My Account</a></li>
+                    <li class="right text">$ 4.02 Credit<span class="pipe">|</span>nevada_scout</li>
 
-    <div class="nav">
-        <div class="wrap">
-            <ul>
-                <li class="right"><a href="./index.html">Logout</a></li>
-                <li class="right"><a href="./account.html">My Account</a></li>
-                <li class="right text">$ 4.02 Credit<span class="pipe">|</span>nevada_scout</li>
-
-                <li><a href="./websites.html" class="active">Websites</a></li>
-                <li><a href="./databases.html">Databases</a></li>
-                <li><a href="./billing.html">Billing</a></li>
-                <li><a href="./support.html">Support</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="content">
-        <div class="wrap">
-
-            <div class="right">
-                <a href="./add-website.html" class="btn btn-secondary"><i class="fa fa-fw fa-plus"></i> Add Website</a>
+                    <li><a href="./websites.html" class="active">Websites</a></li>
+                    <li><a href="./databases.html">Databases</a></li>
+                    <li><a href="./billing.html">Billing</a></li>
+                    <li><a href="./support.html">Support</a></li>
+                </ul>
             </div>
-
-            <h1>
-                Websites
-            </h1>
-
-            <!-- TODO -- Near instant fuzzy search on website domains (filter the list below) -->
-            <!--<input type="search" class="form-control" placeholder="Search websites by domain" spellcheck="false" />-->
-
-            <!-- TODO -- Order by column heading asc + desc -->
-            <table class="websites-table">
-                <tr>
-                    <th class="status">&nbsp;</th> <!-- Site Status (Online / Maintenance Mode) -->
-                    <th>Domain <i class="fa fa-fw fa-caret-down"></i></th>
-                    <th>Status</th>
-                    <th>Added</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="./website-detail.html">hvy.io</a></td>
-                    <td><i class="fa fa-fw fa-warning"></i> Maintenance mode</td>
-                    <td>3 weeks ago</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="./website-detail.html">jckd.co.uk</a></td>
-                    <td><i class="fa fa-fw fa-check"></i> Online</td>
-                    <td>2 weeks ago</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="./website-detail.html">nevadascout.com</a></td>
-                    <td><i class="fa fa-fw fa-check"></i> Online</td>
-                    <td>2 weeks ago</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="./website-detail.html">rustfactions.net</a></td>
-                    <td><i class="fa fa-fw fa-check"></i> Online</td>
-                    <td>3 weeks ago</td>
-                </tr>
-            </table>
-
         </div>
+
+        <div class="content">
+            <div class="wrap">
+
+                <div class="right">
+                    <a href="./add-website.html" class="btn btn-secondary"><i class="fa fa-fw fa-plus"></i> Add Website</a>
+                </div>
+
+                <h1>Websites</h1>
+
+                <!-- TODO -- Near instant fuzzy search on website domains (filter the list below) -->
+                <!--<input type="search" class="form-control" placeholder="Search websites by domain" spellcheck="false" />-->
+
+                <!-- TODO -- Order by column heading asc + desc -->
+                <table class="table table-websites">
+                    <tr>
+                        <th>Domain <i class="fa fa-fw fa-caret-down"></i></th>
+                        <th>Status</th>
+                        <th>Added</th>
+                    </tr>
+                    <tr>
+                        <td><a href="./website-detail.html">hvy.io</a></td>
+                        <td><i class="fa fa-fw fa-warning"></i> Maintenance mode</td>
+                        <td>3 weeks ago</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./website-detail.html">jckd.co.uk</a></td>
+                        <td><i class="fa fa-fw fa-check"></i> Online</td>
+                        <td>2 weeks ago</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./website-detail.html">nevadascout.com</a></td>
+                        <td><i class="fa fa-fw fa-check"></i> Online</td>
+                        <td>2 weeks ago</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./website-detail.html">rustfactions.net</a></td>
+                        <td><i class="fa fa-fw fa-check"></i> Online</td>
+                        <td>3 weeks ago</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="push"></div>
     </div>
 
-    <div class="footer">
+    <footer>
         <div class="wrap">
             <ul>
-                <li><a href="./support.html">Get Support</a></li>
-                <li><a href="#">Blog</a></li>
+                <li class="left">&copy; 2016 <a href="http://hvy.io">Hvy Industries Ltd</a></li>
+
                 <li><a href="#">Grid Status</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://twitter.com/HvyGrid">@HvyGrid</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li><a href="./support.html">Get Support</a></li>
             </ul>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
