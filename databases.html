@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Databases | HvyGrid</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./fa/css/font-awesome.css" />
+    <script type="text/javascript" src="./html5.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="wrap">
+                <ul>
+                    <li class="right"><a href="./index.html">Logout</a></li>
+                    <li class="right"><a href="./account.html">My Account</a></li>
+                    <li class="right text">$ 4.02 Credit<span class="pipe">|</span>nevada_scout</li>
+
+                    <li><a href="./websites.html">Websites</a></li>
+                    <li><a href="./databases.html" class="active">Databases</a></li>
+                    <li><a href="./billing.html">Billing</a></li>
+                    <li><a href="./support.html">Support</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="wrap">
+
+                <div class="right">
+                    <a href="./add-database.html" class="btn btn-secondary"><i class="fa fa-fw fa-plus"></i> Add Database</a>
+                </div>
+
+                <h1>Databases</h1>
+
+                <!-- TODO -- Near instant fuzzy search on database names (filter the list below) -->
+                <!--<input type="search" class="form-control" placeholder="Search databases" spellcheck="false" />-->
+
+                <!-- TODO -- Order by column heading asc + desc -->
+                <table class="table table-databases">
+                    <tr>
+                        <th>DB Name <i class="fa fa-fw fa-caret-down"></i></th>
+                        <th>Engine</th>
+                        <th>Status</th>
+                        <th>Users</th>
+                        <th>Added</th>
+                    </tr>
+                    <tr>
+                        <td><a href="./database-detail.html">wfsed_wordpress</a></td>
+                        <td>MySQL</td>
+                        <td><i class="fa fa-fw fa-warning"></i> Read-only mode</td>
+                        <td>1</td>
+                        <td>1 week ago</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./website-detail.html">wfsed_CustomApp</a></td>
+                        <td>MongoDB</td>
+                        <td><i class="fa fa-fw fa-check"></i> Online</td>
+                        <td>2</td>
+                        <td>2 weeks ago</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="push"></div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <ul>
+                <li class="left">&copy; 2016 <a href="http://hvy.io">Hvy Industries Ltd</a></li>
+
+                <li><a href="#">Grid Status</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tech Stack</a></li>
+                <li><a href="./support.html">Get Support</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
