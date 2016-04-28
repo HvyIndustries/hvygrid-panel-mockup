@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Websites | HvyGrid</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="stylesheet" type="text/css" href="./fa/css/font-awesome.css" />
-    <script type="text/javascript" src="./html5.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/core.css" />
+    <script type="text/javascript" src="/html5.js"></script>
 </head>
 <body>
     <div class="main">
         <div class="nav">
-            <div class="wrap">
-                <ul>
-                    <li class="right"><a href="./index.html">Logout</a></li>
-                    <li class="right"><a href="./account.html">My Account</a></li>
-                    <li class="right text">$ 4.02 Credit<span class="pipe">|</span>nevada_scout</li>
-
-                    <li><a href="./websites.html" class="active">Websites</a></li>
-                    <li><a href="./databases.html">Databases</a></li>
-                    <li><a href="./billing.html">Billing</a></li>
-                    <li><a href="./support.html">Support</a></li>
-                </ul>
-            </div>
+            <?php $menuItem = "websites"; require "/inc/menu.php" ?>
         </div>
 
         <div class="content">
             <div class="wrap">
 
                 <div class="right">
-                    <a href="./add-website.html" class="btn btn-secondary"><i class="fa fa-fw fa-plus"></i> Add Website</a>
+                    <a href="/websites/add" class="btn btn-secondary"><i class="fa fa-fw fa-plus"></i> Add Website</a>
                 </div>
 
                 <h1>Websites</h1>
@@ -71,16 +59,7 @@
     </div>
 
     <footer>
-        <div class="wrap">
-            <ul>
-                <li class="left">&copy; 2016 <a href="http://hvy.io">Hvy Industries Ltd</a></li>
-
-                <li><a href="#">Grid Status</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Tech Stack</a></li>
-                <li><a href="./support.html">Get Support</a></li>
-            </ul>
-        </div>
+        <?php require "/inc/footer.php" ?>
     </footer>
 </body>
 </html>

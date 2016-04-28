@@ -1,0 +1,14 @@
+RewriteEngine On
+
+## TODO -- Don't redirect /blog to /blog.php
+## TODO -- Handle URL Params (/websites/site/102 -> /websites-site.php?id=102)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite - as / (eg /websites-site.php becomes /websites/site)
+RewriteRule ([^/]+)/([^/]+) $1-$2.php [NC,L]
+#RewriteRule ([^/]+)/([^/]+)/ $1-$2.php [NC,L]
+
+# Remove file extension (eg /websites.php becomes /websites)
+RewriteRule ^([^\.]+)/$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

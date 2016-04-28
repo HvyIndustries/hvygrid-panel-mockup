@@ -1,3 +1,6 @@
+@import url("/fa/css/font-awesome.min.css");
+@import url("/styles/csshake-horizontal.min.css");
+
 html, body {
     height: 100%;
 }
@@ -145,6 +148,66 @@ body {
     margin: 0 3px;
 }
 
+.right-content {
+    margin-left: 240px;
+    width: 600px;
+}
+
+/********* SIDEBAR *********/
+
+.sidebar {
+    float: left;
+    display: block;
+    width: 220px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #04090f;
+}
+
+.sidebar ul li:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: 1px solid transparent;
+}
+
+.sidebar ul li.title {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: #081019;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 8px 10px;
+    color: #888;
+    text-decoration: none;
+    transition: color 200ms, border 200ms;
+    border-left: 2px solid transparent;
+}
+
+.sidebar ul li a.active, .sidebar ul li a.active:hover {
+    color: #eee;
+    border-left: 2px solid #3da1cb;
+    font-weight: bold;
+
+}
+
+.sidebar ul li a:hover {
+    color: #eee;
+    border-left: 2px solid #246079;
+}
+
 /********* BUTTONS *********/
 
 .btn {
@@ -229,13 +292,17 @@ body {
     padding: 8px 3px;
     margin: 0 7px;
     border-bottom: 2px solid transparent;
-    transition: border 300ms, color 300ms;
+    transition: border 300ms, color 200ms, background 200ms;
 }
 
 .nav ul li a:hover {
     color: #fff;
     text-decoration: none;
     border-bottom: 2px solid #246079;
+}
+
+.nav ul li a.nohover:hover {
+    border-bottom: 2px solid transparent;
 }
 
 .nav ul li a.active {
@@ -257,6 +324,57 @@ body {
     padding: 0 5px;
 }
 
+.nav .dropdown {
+    background: #04080d;
+    margin-top: 12px;
+    padding-top: 0;
+    box-shadow: 0px 2px 10px 0px rgba(255, 255, 255, 0.05);
+    display: none;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.nav .dropdown li a {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.nav .dropdown li a:hover {
+    background: #1d2025;
+    border-bottom: 2px solid transparent;
+}
+
+.nav .dropdown li.divider {
+    display: block;
+    background: #1d2025;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav .unread-icon {
+    color: #008ec0;
+    margin-top: -6px;
+    margin-left: 3px;
+    font-size: 10px;
+}
+
+/* TODO -- Add a border around the circle
+           to distinguish it better */
+/*.nav .unread-icon:before {
+    border: 2px solid #04080d;
+    border-radius: 50px;
+}*/
+
+.nav .logo {
+    color: #666;
+}
+
+.nav .logo:hover {
+    color: #555;
+}
 
 /********* FOOTER *********/
 
