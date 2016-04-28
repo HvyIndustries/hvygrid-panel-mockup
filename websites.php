@@ -15,39 +15,44 @@
             <div class="wrap">
 
                 <div class="right">
-                    <a href="/websites/add" class="btn btn-secondary"><i class="fa fa-fw fa-plus"></i> Add Website</a>
+                    <a href="/websites/add" class="btn btn-secondary"><i class="fa fa-plus"></i> Add Website</a>
                 </div>
 
                 <h1>Websites</h1>
 
                 <!-- TODO -- Near instant fuzzy search on website domains (filter the list below) -->
-                <!--<input type="search" class="form-control" placeholder="Search websites by domain" spellcheck="false" />-->
+                <input type="search" class="form-control search" placeholder="Search by domain" spellcheck="false" />
 
                 <!-- TODO -- Order by column heading asc + desc -->
                 <table class="table table-websites">
                     <tr>
                         <th>Domain <i class="fa fa-fw fa-caret-down"></i></th>
                         <th>Status</th>
-                        <th>Added</th>
+                        <th>Traffic</th>
+                        <th>Repo Updated</th>
                     </tr>
                     <tr>
-                        <td><a href="./website-detail.html">hvy.io</a></td>
+                        <td><a href="/websites/site/cf7s42g3">hvy.io</a></td>
                         <td><i class="fa fa-fw fa-warning"></i> Maintenance mode</td>
-                        <td>3 weeks ago</td>
+                        <td>53 views this week</td>
+                        <td>45 minutes ago</td>
                     </tr>
                     <tr>
-                        <td><a href="./website-detail.html">jckd.co.uk</a></td>
+                        <td><a href="/websites/site/ktbf0s62">jckd.co.uk</a></td>
                         <td><i class="fa fa-fw fa-check"></i> Online</td>
-                        <td>2 weeks ago</td>
+                        <td>192 views this week</td>
+                        <td>6 months ago</td>
                     </tr>
                     <tr>
-                        <td><a href="./website-detail.html">nevadascout.com</a></td>
+                        <td><a href="/websites/site/0js09kiw">nevadascout.com</a></td>
                         <td><i class="fa fa-fw fa-check"></i> Online</td>
-                        <td>2 weeks ago</td>
+                        <td>732 views this week</td>
+                        <td>Yesterday</td>
                     </tr>
                     <tr>
-                        <td><a href="./website-detail.html">rustfactions.net</a></td>
+                        <td><a href="/websites/site/5juh5ttq">rustfactions.net</a></td>
                         <td><i class="fa fa-fw fa-check"></i> Online</td>
+                        <td>5,153 views this week</td>
                         <td>3 weeks ago</td>
                     </tr>
                 </table>

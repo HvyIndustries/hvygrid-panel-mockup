@@ -17,8 +17,9 @@
                 <div class="sidebar">
                     <ul>
                         <li class="title">Notifications</li>
-                        <li><a href="/notifications" class="active">Unread</a></li>
+                        <li><a href="/notifications" class="active">Unread <span class="right">5</span></a></li>
                         <li><a href="/notifications/archive">Archived</a></li>
+                        <li><a href="/settings/notifications">Notification Settings</a></li>
                     </ul>
                 </div>
 

@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background: #0a1420;
+    background: #eee;
     font-family: "Open Sans";
     font-size: 14px;
     margin: 0;
@@ -34,18 +34,18 @@ body {
 .content {
     padding-top: 60px;
     padding-bottom: 50px;
-    color: #ccc;
+    color: #666;
 }
 
 .content h1 {
-    color: #eee;
+    color: #202020;
     font-size: 28px;
     font-weight: normal;
     margin: 0;
 }
 
 .content h2 {
-    color: #eee;
+    color: #666;
     font-size: 21px;
     font-weight: normal;
     margin: 0;
@@ -59,37 +59,42 @@ body {
     font: inherit;
     width: 280px;
     padding: 6px 8px;
-    margin-bottom: 10px;
-    border: 0;
     background: transparent;
-    border: 1px solid #4e555e;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #666;
 }
 
 .content .form-control:focus {
     border: 1px solid #3da1cb;
+    color: #202020;
+}
+
+.search {
+    margin-top: 10px;
+    background: #fff !important;
 }
 
 .table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
+    border-top: 1px solid #ccc;
 }
 
 .table tr td, .table tr th {
     text-align: left;
-    border-bottom: 2px solid #222b36;
+    border-bottom: 1px solid #ccc;
     padding: 8px 10px;
 }
 
 .table tr th {
-    color: #eee;
+    color: #444;
+    background: #d6d6d6;
 }
 
 .table tr:hover {
-    background: #081019;
+    background: #f6f6f6;
 }
 
 .table a {
@@ -100,7 +105,7 @@ body {
 }
 
 .table a:hover {
-    color: #ccc;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -150,7 +155,7 @@ body {
 
 .right-content {
     margin-left: 240px;
-    width: 600px;
+    width: 680px;
 }
 
 /********* SIDEBAR *********/
@@ -165,12 +170,13 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 1px solid #000;
+    border: 1px solid #bbb;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .sidebar ul li {
-    border-bottom: 1px solid #04090f;
+    border-bottom: 1px solid #ccc;
 }
 
 .sidebar ul li:last-child {
@@ -182,30 +188,30 @@ body {
 .sidebar ul li.title {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
-    background: #081019;
+    background: #d6d6d6;
     padding: 8px 12px;
     font-weight: bold;
+    border-bottom: 1px solid #bbb;
 }
 
 .sidebar ul li a {
     display: block;
     padding: 8px 10px;
-    color: #888;
+    color: #666;
     text-decoration: none;
     transition: color 200ms, border 200ms;
     border-left: 2px solid transparent;
 }
 
 .sidebar ul li a.active, .sidebar ul li a.active:hover {
-    color: #eee;
-    border-left: 2px solid #3da1cb;
-    font-weight: bold;
-
-}
+    color: #202020;
+    border-left: 2px solid #246079;
+    font-weight: bold
+;}
 
 .sidebar ul li a:hover {
-    color: #eee;
-    border-left: 2px solid #246079;
+    color: #202020;
+    border-left: 2px solid #3da1cb;
 }
 
 /********* BUTTONS *********/
@@ -222,6 +228,10 @@ body {
     font-size: 12px;
     text-decoration: none;
     transition: background 100ms;
+}
+
+.btn .fa {
+    padding-right: 4px;
 }
 
 .btn-primary {
@@ -333,6 +343,8 @@ body {
     border-bottom: 1px solid #000;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .nav .dropdown li a {
@@ -354,11 +366,22 @@ body {
     margin-bottom: 5px;
 }
 
+.nav #notifications-icon {
+    margin-top: -3px;
+}
+
+.nav .unread-icon-background {
+    color: #04080d;
+    margin-top: -6px;
+    margin-left: 3px;
+    font-size: 13px;
+}
+
 .nav .unread-icon {
     color: #008ec0;
     margin-top: -6px;
     margin-left: 3px;
-    font-size: 10px;
+    font-size: 9px;
 }
 
 /* TODO -- Add a border around the circle
@@ -370,6 +393,7 @@ body {
 
 .nav .logo {
     color: #666;
+    font-size: 0.9em;
 }
 
 .nav .logo:hover {
@@ -419,6 +443,10 @@ footer ul li a:hover {
 
 /********* LOGIN *********/
 
+body.login {
+    background: #0a1420;
+}
+
 .loginbox {
     width: 350px;
     margin: 50px auto 0 auto;
@@ -436,6 +464,8 @@ footer ul li a:hover {
     text-align: center;
     margin: 0 0 25px 0;
     padding: 0;
+    text-transform: uppercase;
+    color: #666;
 }
 
 .loginbox-inner .form-control {

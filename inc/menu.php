@@ -11,14 +11,15 @@
             </li>
             <li class="right">
                 <a href="/notifications" class="nohover" title="You have 5 unread notifications">
-                    <span id="notifications-icon" class="fa-stack shake-horizontal shake-constant">
+                    <span id="notifications-icon" class="fa-stack"> <!-- shake-horizontal shake-constant"> -->
                         <i class="fa fa-fw fa-bell fa-stack-1x"></i>
+                        <i class="fa fa-fw fa-circle fa-stack-1x unread-icon-background"></i>
                         <i class="fa fa-fw fa-circle fa-stack-1x unread-icon"></i>
                     </span>
                 </a>
             </li>
 
-            <li><a href="/websites" class="logo nohover">HVYGRID</a></li>
+            <li><a href="/" class="logo nohover">HVYGRID</a></li>
             <li><a href="/websites" <?php if($menuItem == "websites") { ?> class="active" <?php } ?>>Websites</a></li>
             <li><a href="/databases" <?php if($menuItem == "databases") { ?> class="active" <?php } ?>>Databases</a></li>
             <!-- <li><a href="./teams.html">Manage Teams</a></li> -->

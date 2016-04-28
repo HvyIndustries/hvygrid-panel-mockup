@@ -45,6 +45,8 @@
                     <div style="clear: right;"></div>
 
                     <p>TODO</p>
+
+                    <p><?= $_GET["id"] ?></p>
                 </div>
 
                 <!-- <h1>Billing &amp; Credit</h1> -->
