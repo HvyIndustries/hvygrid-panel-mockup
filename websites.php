@@ -24,6 +24,7 @@
                 <input type="search" class="form-control search" placeholder="Search by domain" spellcheck="false" />
 
                 <!-- TODO -- Order by column heading asc + desc -->
+                <!-- TODO -- Color status icons (green tick, etc) -->
                 <table class="table table-websites">
                     <tr>
                         <th>Domain <i class="fa fa-fw fa-caret-down"></i></th>

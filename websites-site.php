@@ -33,6 +33,15 @@ $baseUrl = "/websites/site/{$siteId}";
                         <li><a href="<?= $baseUrl ?>/mailboxes">Mailboxes</a></li>
                         <li><a href="<?= $baseUrl ?>/traffic">Traffic Stats</a></li>
                         <li><a href="<?= $baseUrl ?>/traffic">Customise Static Pages</a></li>
+                        <li><a href="<?= $baseUrl ?>/logs">Server Logs</a></li>
+
+                        <!--
+                            Server Log Browser lets you view apache/nginx/ruby/php logs (access + errors)
+                            updated in real time (no need to refresh)
+
+                            Custom static pages should let you use either an existing file (eg 404.html)
+                            or enter some custom html/css into a box to use instead
+                        -->
 
                         <!--
                             Note: Handle update scheduling for container updates to ruby, php, etc
