@@ -158,6 +158,11 @@ body {
     width: 680px;
 }
 
+h2 .sitename {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
 /********* SIDEBAR *********/
 
 .sidebar {
@@ -173,6 +178,8 @@ body {
     border: 1px solid #bbb;
     border-radius: 3px;
     margin-bottom: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 .sidebar ul li {
@@ -192,19 +199,21 @@ body {
     padding: 8px 12px;
     font-weight: bold;
     border-bottom: 1px solid #bbb;
+    color: #202020;
 }
 
 .sidebar ul li a {
     display: block;
     padding: 8px 10px;
     color: #666;
+    background: #fff;
     text-decoration: none;
     transition: color 200ms, border 200ms;
     border-left: 2px solid transparent;
 }
 
 .sidebar ul li a.active, .sidebar ul li a.active:hover {
-    color: #202020;
+    /*color: #202020;*/
     border-left: 2px solid #246079;
     font-weight: bold
 ;}

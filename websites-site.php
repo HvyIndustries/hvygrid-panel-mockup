@@ -29,10 +29,12 @@ $baseUrl = "/websites/site/{$siteId}";
                         <li><a href="<?= $baseUrl ?>" class="active">Site Overview</a></li>
                         <li><a href="<?= $baseUrl ?>/settings">General Settings</a></li>
                         <li><a href="<?= $baseUrl ?>/repository">Repository</a></li>
+                        <li><a href="<?= $baseUrl ?>/branches">Deployment Branches</a></li>
                         <li><a href="<?= $baseUrl ?>/email">Email Forwarding</a></li>
                         <li><a href="<?= $baseUrl ?>/mailboxes">Mailboxes</a></li>
                         <li><a href="<?= $baseUrl ?>/traffic">Traffic Stats</a></li>
                         <li><a href="<?= $baseUrl ?>/traffic">Customise Static Pages</a></li>
+                        <li><a href="<?= $baseUrl ?>/files">File Browser</a></li>
                         <li><a href="<?= $baseUrl ?>/logs">Server Logs</a></li>
 
                         <!--
@@ -55,6 +57,7 @@ $baseUrl = "/websites/site/{$siteId}";
                     <div class="right">
                         <a href="/websites/add" class="btn btn-tertiary">Mark all as read</a>
                     </div>
+                    <h2>Manage Site <span class="sitename">hvy.io</span></h2>
                     <div style="clear: right;"></div>
 
                     <table>
